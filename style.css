@@ -1,0 +1,253 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+    box-sizing: border-box;
+}
+
+.top {
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.game {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    font-size: 40px;
+    margin: 5.2px 5.2px;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    border: 2.8px solid black;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: white;
+}
+
+.left {
+    height: 300px;
+    width: 150px;
+    font-size: 30px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.right {
+    font-size: 10px;
+    margin: 5.2px 5.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 9.3px;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+button {
+    padding: 4.6px 4.6px;
+    font-size: 10px;
+    background-color: rgb(0, 255, 38);
+}
+
+@media (max-width: 768px) {
+    .top {
+        width: 90%;
+        font-size: 50px;
+    }
+    
+    .middle {
+        height: auto;
+    }
+    
+    .game {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .cell {
+        font-size: 80px;
+    }
+    
+    .left, .right {
+        width: 800px;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .info {
+        padding-top: 50px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top {
+        width: 100%;
+        font-size: 60px;
+    }
+    
+    .middle {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .game {
+        width: 800px;
+        height: 800px;
+    }
+    
+    .cell {
+        font-size: 100px;
+    }
+    
+    .left, .right {
+        width: 900px;
+        height: auto;
+    }
+    
+    .info {
+        padding-top: 30px;
+        font-size: 50px;
+    }
+    
+    table {
+        font-size: 20px;
+    }
+    
+    button {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .top {
+        width: 80%;
+        font-size: 45px;
+    }
+    
+    .middle {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+    .game {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .cell {
+        font-size: 60px;
+    }
+    
+    .left, .right {
+        width: 700px;
+        margin: 10px auto;
+        height: auto;
+    }
+    
+    .info {
+        padding-top: 50px;
+        font-size: 35px;
+    }
+    
+    table {
+        font-size: 15px;
+    }
+    
+    button {
+        font-size: 25px;
+        padding: 10px 15px;
+    }
+}
+.new{
+    margin-top: 18px;
+    color: blueviolet;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
